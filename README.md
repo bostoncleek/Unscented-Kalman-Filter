@@ -50,7 +50,7 @@ Alogrithm from Probabilistic Robotics by Sebastian Thrun.
 The sigma points are sampled again after the Gaussian is recovered in lines 4 and 5. The new sigma points are passed through the measurement model in line 7. The cross-covariance matrix in line 10 determines the relationship between state and observation. The Kalman gain is computed in line 11 based on the cross-covariance and the uncertainty matrix. In line 12 the difference between the actual measurement and the predicted observation is used to determine the affect the Kalman gain will have upon updating the mean. The Kalman gain and the uncertainty matrix are used to update the covariance matrix in line 13.
 
 ## Motion Model
-The robot is modeled as a kinematic unicycle, where the controls (u = [u1 u2]) are the linear and angular velocities. In the frame of the robot, the positive x-direction is forward and the positive y-direction is left. Positive angular velocity and angular position is considered counter clockwise.
+The robot is modeled as a kinematic unicycle, where the controls are the linear and angular velocities. In the frame of the robot, the positive x-direction is forward and the positive y-direction is left. Positive angular velocity and angular position is considered counter clockwise.
 
 ## Measurement Model
 The measurement model outputs the range and bearing of an observed landmark relative to the robot. The range is defined as the distance from the robot to the landmark. The bearing is angular position of the landmark relative to the robots x-axis frame.
