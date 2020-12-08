@@ -17,7 +17,7 @@ Simply run:
 python3 run.py
 ```
 
-run.py displays results to questions: 2,3,6,8, and 9. The file run.py will first display the two plots for question 8. You have the option to specify how long to run the full trajectory. It took 40s on my computer to run the trajectory. After the plots for part B run the plots for Part A will run. You must close a plot for the next one to appear.
+The file run.py displays results to questions: 2,3,6,8, and 9. The file run.py will first display the two plots for question 8. You have the option to specify how long to run the full trajectory. It took 40s on my computer to run the trajectory. After the plots for part B run the plots for Part A will run. You must close a plot for the next one to appear.
 
 The plot to question 2 will appear then after it is closed
 the plot to question 3 will appear. Finally after closure of the last plot
