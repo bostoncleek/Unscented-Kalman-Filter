@@ -27,14 +27,14 @@ if __name__ == "__main__":
     # in ds0_Odometry.dat: 0 -> 95818.
     # Set iter = None and it will run until the end
     # Takes aprrox. 40s to run the entire data set on i7 32GB RAM
-    #iter = None
+    # iter = None
     iter = 5000
     run_filter(iter)
 
     # If you do not want to wait for the full data set to run
     # uncomment the line bellow to plot the results from the full filter
     # that were saved to filter_output.txt
-    #filter_results()
+    # filter_results()
 
 
     # plot the states x,y,theta of the robot versus time
