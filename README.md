@@ -9,6 +9,8 @@ This project focuses on implementing a UFK using the [UTIAS Multi-Robot Cooperat
 
 The plot at the top compares the results of the UKF to dead reckoning and the ground truth. When a landmark is observed (represented as a green dot) the trajectory approximated using the UKF tends toward the ground truth path. Localization algorithms such as the UKF are used for SLAM in autonomous vehicle applications such as driver-less cars and extraterrestrial exploration robots.
 
+See this [document](https://github.com/bostoncleek/Unscented-Kalman-Filter/blob/master/doc/ukf.pdf). for more details and theory behind the implementation.
+
 # How to run
 Simply run:
 ```
@@ -32,8 +34,6 @@ Change the data file input paths at the top of params.py to
 specify a different file path. Specify the noise to add to the sensor and motion models in params.py
 
 # Implementation
-See this [document](https://github.com/bostoncleek/Unscented-Kalman-Filter/blob/master/doc/ukf.pdf). for more details and theory behind the implementation.
-
 ## Alogrithm
 The UKF is accomplished by representing the belief as a Gaussian and extracting sigma points from it. The sigma points are located at the mean and along the axis of the covariance matrix. The equation for the sigma points is shown in line 2 bellow. The sigma points are passed through the nonlinear state transition function.
 
