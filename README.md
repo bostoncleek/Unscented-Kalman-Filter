@@ -44,7 +44,7 @@ Note the motion model noise covariance matrix is applied to the predicted covari
 Alogrithm from Probabilistic Robotics by Sebastian Thrun.
 
 <p align="center">
-  <img src="/media/ukfalgo.jpg" width="250" height="350"/>
+  <img src="/media/ukfalgo.jpg" width="425" height="490"/>
 </p>
 
 The sigma points are sampled again after the Gaussian is recovered in lines 4 and 5. The new sigma points are passed through the measurement model in line 7. The cross-covariance matrix in line 10 determines the relationship between state and observation. The Kalman gain is computed in line 11 based on the cross-covariance and the uncertainty matrix. In line 12 the difference between the actual measurement and the predicted observation is used to determine the affect the Kalman gain will have upon updating the mean. The Kalman gain and the uncertainty matrix are used to update the covariance matrix in line 13.
@@ -53,4 +53,4 @@ The sigma points are sampled again after the Gaussian is recovered in lines 4 an
 The robot is modeled as a kinematic unicycle, where the controls (u = [u1 u2]) are the linear and angular velocities. In the frame of the robot, the positive x-direction is forward and the positive y-direction is left. Positive angular velocity and angular position is considered counter clockwise.
 
 ## Measurement Model
-The measurement model outputs the range and bearing of an observed landmark relative to the robot. The range is defined as the distance from the robot to the landmark. The bearing is angular position of the landmark relative to the robots x-axis frame. 
+The measurement model outputs the range and bearing of an observed landmark relative to the robot. The range is defined as the distance from the robot to the landmark. The bearing is angular position of the landmark relative to the robots x-axis frame.
